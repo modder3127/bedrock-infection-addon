@@ -1,0 +1,6 @@
+This is a placeholder PNG file for the antidote item icon.
+
+Replace this file with a real PNG texture named antidote.png in the same path:
+resource_pack/textures/item/antidote.png
+
+Recommended size: 16x16 or 32x32 depending on style. Save a proper PNG at the path above.

@@ -1,0 +1,17 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Resource Pack for Bedrock Infection Add-on (textures + item icons).",
+    "name": "Infection Resource Pack",
+    "uuid": "d3c4b5a6-9f7e-4f2b-a1c0-2b3c4d5e6f72",
+    "version": [1, 0, 0]
+  },
+  "modules": [
+    {
+      "description": "Resources (textures, models)",
+      "type": "resources",
+      "uuid": "e4d5c6b7-0f8a-4b3c-9d1e-3c4d5e6f7a83",
+      "version": [1, 0, 0]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Behavior Pack for Bedrock Infection Add-on. Infected pig attacks and infects players causing Blindness for 10s.\n\nLore: The Parasite Project — Discovered in late 2026 by Dr. I. M. Forsythe, the parasite was a failed bioengineering attempt to increase livestock resilience. The parasite adapted, infecting swine and later spilling into humans. The first recorded outbreak began on 2026-10-17 at a remote farm. Survivors report temporary blindness and disorientation. An antidote was developed by modder3127.\n\nCreated by: modder3127 on 2026-10-17",
+    "name": "Infection Behavior Pack",
+    "uuid": "b1f5a4b6-8e2d-4d6b-bf8f-1a2c3d4e5f60",
+    "version": [1, 0, 0]
+  },
+  "modules": [
+    {
+      "description": "Behavior definitions (entities, loot, recipes)",
+      "type": "data",
+      "uuid": "c2a3b4d5-e6f7-4829-9a0b-1c2d3e4f5a61",
+      "version": [1, 0, 0]
+    }
+  ]
+}

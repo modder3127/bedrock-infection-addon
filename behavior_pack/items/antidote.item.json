@@ -1,0 +1,32 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "mod:antidote",
+      "category": "Misc",
+      "is_experimental": false,
+      "register_to_create_menu": true
+    },
+    "components": {
+      "minecraft:use_duration": 32,
+      "minecraft:food": {
+        "nutrition": 0,
+        "saturation_modifier": "low",
+        "can_always_eat": true
+      },
+      "minecraft:display_name": "Antidote",
+      "minecraft:icon": "textures/item/antidote"
+    },
+    "events": {
+      "consume_antidote": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "effect @s blindness 0 0 true"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

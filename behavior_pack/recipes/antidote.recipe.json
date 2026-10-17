@@ -1,0 +1,13 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:recipe_shapeless": {
+    "description": { "identifier": "mod:antidote_recipe" },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      { "item": "minecraft:glass_bottle" },
+      { "item": "minecraft:glow_berries" },
+      { "item": "minecraft:potion" }
+    ],
+    "result": { "item": "mod:antidote", "count": 1 }
+  }
+}

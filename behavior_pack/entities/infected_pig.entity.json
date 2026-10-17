@@ -1,0 +1,47 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "mod:infected_pig",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "materials": { "default": "entity_alphatest" },
+      "textures": { "default": "textures/entity/infected_pig" },
+      "geometry": { "default": "geometry.pig" },
+      "render_controllers": [ "controller.render.default" ]
+    },
+
+    "components": {
+      "minecraft:health": { "value": 10, "max": 10 },
+      "minecraft:movement": { "value": 0.25 },
+      "minecraft:behavior.random_stroll": { "priority": 1, "speed_multiplier": 1.0 },
+      "minecraft:behavior.melee_attack": { "priority": 2, "speed_multiplier": 1.2, "target_distance": 1.5 },
+      "minecraft:attack": { "damage": 2 },
+
+      "minecraft:loot": "loot_tables/entities/infected_pig.loot.json",
+
+      "minecraft:entity_events": {
+        "infect_player_on_hit": {
+          "sequence": [
+            {
+              "run_command": {
+                "command": "effect @a[r=2] blindness 10 0 true"
+              }
+            }
+          ]
+        }
+      }
+    },
+
+    "events": {
+      "minecraft:entity_attack": {
+        "sequence": [
+          {
+            "event": "infect_player_on_hit"
+          }
+        ]
+      }
+    }
+  }
+}
